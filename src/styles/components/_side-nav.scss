@@ -1,0 +1,38 @@
+@import '../settings/variables';
+@import '../tools/mixins/position';
+
+.c-side-nav {
+  background-color: $color-sidebar;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+
+  &__logo {
+    color: $logo-color;
+    font-size: 3.4em;
+    padding-top: $logo-padding;
+    padding-bottom: $logo-padding;
+    text-align: center;
+  }
+
+  &__divider {
+    border-top: $hairline solid $color-sidebar-light;
+  }
+
+  &__burger {
+    height: 2em;
+    @include absolute(1em, 1em, auto, auto);
+  }
+
+  @media (max-height: 650px) {
+    &__logo {
+      padding-top: $margin-small;
+      padding-bottom: $margin-small;
+    }
+
+    &__divider {
+      margin-top: $margin-small;
+      margin-bottom: $margin-small;
+    }
+  }
+}

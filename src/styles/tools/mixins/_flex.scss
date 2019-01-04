@@ -1,0 +1,21 @@
+@mixin flex(
+  $display,
+  $align-items,
+  $justify-content,
+  $wrap: nowrap,
+  $direction: row
+) {
+  display: $display;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-wrap: $wrap;
+  flex-direction: $direction;
+}
+
+@mixin centered-content() {
+  @include flex(flex, center, center);
+}
+
+@mixin stretched-centered-content() {
+  @include flex(flex, stretch, center);
+}

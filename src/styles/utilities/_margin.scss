@@ -1,0 +1,36 @@
+@import '../tools/mixins/margin';
+@import '../tools/mixins/breakpoints';
+
+.u-margin {
+  margin: $margin-normal;
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      &#{$infix}--none {
+        margin: 0;
+      }
+
+      &#{$infix}--tiny {
+        margin: $margin-tiny;
+      }
+
+      &#{$infix}--small {
+        margin: $margin-small;
+      }
+
+      &#{$infix}--big {
+        margin: $margin-big;
+      }
+
+      &#{$infix}--enormous {
+        margin: $margin-enormous;
+      }
+
+      @include u-margin(bottom, $infix);
+      @include u-margin(top, $infix);
+      @include u-margin(left, $infix);
+      @include u-margin(right, $infix);
+    }
+  }
+}

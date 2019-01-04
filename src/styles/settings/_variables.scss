@@ -1,0 +1,129 @@
+$color-black: #000;
+$color-primary: #2d2728;
+$color-primary-dark: #595e8c;
+$color-primary-light: #e0f9f4;
+$color-secondary: #828597;
+$color-accent: #bd181d;
+$color-dark: #2d2728;
+$color-neutral: #eaf1f3;
+$color-shadow: #d0d2e1;
+$color-shadow-light: rgba(0, 0, 0, 0.03);
+$color-sidebar: #4a4a4a;
+$color-sidebar-active: #5e5d5d;
+$color-sidebar-light: #323762;
+$color-logo: #ffffff;
+$color-separator: #e0ebe9;
+$color-labels: #86889e;
+$color-headers: $color-labels;
+
+$color-background-alternative: #f9fcfc;
+$color-background: #ffffff;
+$color-inverted-background: #272b4c;
+
+$color-paragraph: #35395e;
+$color-paragraph-dark: #494d6e;
+$color-paragraph-light: #b3b5c2;
+$color-inverted-paragraph: $color-background;
+
+$color-increase: #2ec185;
+$color-decrease: #e1494f;
+$color-selected: #ffc857;
+
+$color-warn-low: #efc153;
+$color-warn-mid: #f68251;
+$color-warn-height: #e74338;
+
+$color-progress-bar-default: $color-paragraph-light;
+
+$font-metropolis: metropolis;
+
+$base-font-size: 16px;
+$base-font-family: $font-metropolis, sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-size-small: 0.6875em;
+$font-size-medium: 0.75em;
+$font-size-caption: 0.875em;
+$font-size-big: 1.625em;
+
+$border-radius: 25em;
+
+$hamburger-bar-width: 2em;
+$hamburger-bar-height: 0.225em;
+$hamburger-bar-spacing: 0.75em;
+
+$letter-spacing-label: 0.125em;
+
+$margin-tiny: 0.25em;
+$margin-small: 0.5em;
+$margin-normal: 1em;
+$margin-big: 2em;
+$margin-enormous: 3em;
+
+$gutter-tiny: 0.25em;
+$gutter-small: 0.5rem;
+$gutter-normal: 1rem;
+$gutter-big: 2rem;
+$gutter-enormous: 3rem;
+
+$overlapping-depth: -8em;
+
+$user-icon-padding: 0.125rem;
+$small-icon-size: 2.5rem;
+$medium-icon-size: 3.75rem;
+$big-icon-size: 8rem;
+
+$main-width: 75em;
+$hairline: 0.0625rem;
+$aside-width: 12.5rem;
+$header-height: 9.9375rem;
+$header-single-line-height: 3.75rem;
+
+$sidebar-border-weight: 0.125rem;
+
+$logo-size: 3.4em;
+$logo-color: $color-primary;
+$logo-padding: 3rem;
+$hr-margin: 2rem;
+
+$overlay-color: rgba(0, 0, 0, 0.5);
+
+$button-border-width: $hairline;
+
+$layer-modal: 8;
+$layer-blocker: 7;
+$layer-burger: 6;
+$layer-sticky: 5;
+$layer-tooltip: 4;
+$layer-screen-attached: 3;
+$layer-blur-handler: 2;
+$layer-content-attached: 1;
+$layer-content: 0;
+
+$transition-time: 0.3s;
+$transition-type: ease;
+
+$table-cell-padding: 1.563em;
+
+$table-bg: transparent;
+$table-accent-bg: rgba(255, 255, 255, 0.05);
+$table-hover-bg: rgba(255, 255, 255, 0.095);
+$table-active-bg: $table-hover-bg;
+
+$table-border-width: $hairline;
+$table-border-color: $color-neutral;
+
+$table-head-bg: transparent;
+$table-head-color: black;
+
+$columns-count: 12;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$min-hover-info-width: 12rem;

@@ -1,0 +1,70 @@
+@import '../settings/variables';
+@import '../tools/mixins/grid';
+@import '../tools/mixins/breakpoints';
+@import '../tools/mixins/position';
+
+.o-layout {
+  display: flex;
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &--vertical {
+    flex-direction: column;
+  }
+
+  &--content-dependent {
+    position: relative;
+    display: inline-block;
+  }
+
+  &--justified {
+    justify-content: center;
+  }
+
+  &--space-around {
+    justify-content: space-around;
+  }
+
+  &--space-between {
+    justify-content: space-between;
+  }
+
+  &__item {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+        &#{$infix} {
+          max-width: 100%;
+          flex-grow: 1;
+        }
+
+        &#{$infix}-auto {
+          flex: 0 0 auto;
+          width: auto;
+          max-width: none;
+        }
+
+        @for $i from 1 through $columns-count {
+          &#{$infix}-#{$i} {
+            @include make-col($i, $columns-count);
+          }
+        }
+      }
+    }
+
+    &__burger {
+      @include fixed(1em, 1em, auto, auto);
+    }
+
+    &--separator {
+      border-left: $hairline solid $color-separator;
+    }
+
+    &--grow {
+      flex: 1;
+    }
+  }
+}

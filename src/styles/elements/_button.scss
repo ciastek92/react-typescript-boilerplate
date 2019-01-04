@@ -1,0 +1,11 @@
+@import '../settings/variables';
+
+button {
+  background-color: transparent;
+
+  &:focus {
+    --webkit-apperance: none;
+    --moz-apperance: none;
+    outline: none;
+  }
+}

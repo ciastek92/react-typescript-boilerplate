@@ -1,0 +1,21 @@
+@import '../settings/variables';
+
+html {
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+}
+
+body {
+  font-family: $base-font-family;
+  color: $color-paragraph;
+
+  .body__preloader {
+    display: none;
+  }
+
+  &.body--loading {
+    .body__preloader {
+      display: initial;
+    }
+  }
+}

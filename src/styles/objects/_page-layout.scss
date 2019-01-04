@@ -1,0 +1,32 @@
+@import '../settings/variables';
+@import '../tools/mixins/position';
+@import '../tools/mixins/breakpoints';
+
+.o-page-layout {
+  &__header {
+    width: 100%;
+    z-index: $layer-sticky;
+
+    @include media-breakpoint-up(md) {
+      padding-left: $aside-width;
+    }
+  }
+
+  &--sticky-header {
+
+    @include media-breakpoint-up(md) {
+      .o-page-layout__header {
+        @include fixed(0, auto, auto, 0);
+      }
+      .o-page-layout__content {
+        padding-top: $header-height;
+      }
+    }
+  }
+
+  &--single-line-header {
+    .o-page-layout__content {
+      padding-top: $header-single-line-height;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '../settings/_variables.scss';
+
+.h2 {
+  font-size: 1.5em;
+  font-weight: $font-weight-bold;
+  margin-bottom: $gutter-small;
+
+  &--underlined {
+    border-bottom: $hairline solid $color-primary;
+    display: inline-block;
+    padding-bottom: 0.5em;
+  }
+}

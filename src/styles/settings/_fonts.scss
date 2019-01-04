@@ -1,0 +1,18 @@
+@import 'variables';
+
+@font-face {
+  font-family: $font-metropolis;
+  src: url('~../assets/fonts/metropolis/metropolis-regular.ttf')
+      format('truetype'),
+    url('~../assets/fonts/metropolis/metropolis-regular.woff') format('woff');
+  font-weight: $font-weight-normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: $font-metropolis;
+  src: url('~../assets/fonts/metropolis/metropolis-medium.ttf')
+      format('truetype'),
+    url('~../assets/fonts/metropolis/metropolis-medium.woff') format('woff');
+  font-weight: $font-weight-bold;
+  font-style: normal;
+}

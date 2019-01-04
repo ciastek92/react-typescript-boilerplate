@@ -1,0 +1,67 @@
+@import '../settings/variables';
+@import '../tools/mixins/transition';
+@import '../utilities/utils';
+
+.c-nav-item {
+  @extend %button-padding;
+  @include transition((color, background-color, border-color));
+  border-left: $sidebar-border-weight solid transparent;
+  color: $color-secondary;
+  display: flex;
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
+  justify-content: flex-start;
+  letter-spacing: $hairline;
+  line-height: 1.8em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &__icon {
+    font-size: 1.625em;
+    margin-right: 1.25em;
+    text-align: right;
+    width: 1.25em;
+  }
+
+  &:hover, &:focus, &--active {
+    color: $color-primary;
+  }
+
+  &--active {
+    background-color: $color-sidebar-active;
+    border-color: $color-primary;
+  }
+
+  &--external{
+    &:hover, &:focus, &--active {
+      color: $color-logo;
+      border-color: transparent;
+      background-color: transparent;
+    }
+  }
+
+  &--light {
+    border: none;
+    font-size: 0.75em;
+    font-weight: $font-weight-normal;
+    color: $color-paragraph-dark;
+    line-height: 1.2em;
+    text-transform: capitalize;
+
+    .c-nav-item__icon {
+      color: $color-secondary;
+      font-size: 1.125em;
+      width: 1.125em;
+      margin-right: 1.25em;
+    }
+
+    &:hover, &:focus, &--active {
+      color: $color-paragraph-dark;
+    }
+
+    &--active {
+      background-color: $color-background-alternative;
+    }
+  }
+}

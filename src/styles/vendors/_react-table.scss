@@ -1,0 +1,11 @@
+.ReactTable {
+  border: 1px solid $color-shadow;
+  .rt-tbody {
+    .rt-td {
+      border-right: 1px solid $color-shadow;
+    }
+    .rt-tr-group {
+      border-bottom: 1px solid $color-shadow;
+    }
+  }
+}

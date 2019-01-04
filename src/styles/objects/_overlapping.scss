@@ -1,0 +1,8 @@
+@import '../settings/variables';
+@import '../tools/mixins/gutter';
+
+.o-overlapping {
+  &--top {
+    margin-top: $overlapping-depth;
+  }
+}

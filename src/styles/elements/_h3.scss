@@ -1,0 +1,19 @@
+@import '../settings/_variables.scss';
+
+.h3 {
+  color: $color-headers;
+  font-size: 0.825em;
+  font-weight: $font-weight-normal;
+  letter-spacing: $letter-spacing-label;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+
+  &--light {
+    color: $color-paragraph-light;
+  }
+
+  &--underlined {
+    border-bottom: $hairline solid $color-neutral;
+    padding-bottom: 0.5em;
+  }
+}

@@ -1,0 +1,85 @@
+@import '../settings/variables';
+@import '../tools/mixins/transition';
+
+.c-button {
+  @include transition((color, border-color, opacity));
+  border: $button-border-width solid transparent;
+  border-radius: 1.25em;
+  color: $color-paragraph;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: $font-weight-normal;
+  line-height: 1em;
+  padding: 0.75em 1.5em;
+  user-select: none;
+
+  &:hover,
+  &--active {
+    color: $color-primary;
+  }
+
+  &--active {
+    border-color: $color-primary;
+  }
+
+  &--filled {
+    color: $color-background;
+    background-color: $color-primary;
+
+    &:hover {
+      color: $color-background;
+    }
+  }
+
+  &--disabled {
+    color: $color-paragraph-light;
+    border-color: $color-paragraph-light;
+    cursor: default;
+
+    &:hover {
+      color: $color-paragraph-light;
+    }
+  }
+
+  &__label {
+    flex: 1 1 auto;
+  }
+
+  &--with-icon {
+    display: flex;
+
+    .c-button__icon {
+      align-self: flex-end;
+    }
+  }
+
+  &--left-padding {
+    padding-left: 1em;
+    padding-right: 0;
+  }
+
+  &--big {
+    font-size: 0.875em;
+    font-weight: $font-weight-bold;
+  }
+
+  &--border {
+    color: $color-primary;
+    border-color: currentColor;
+    opacity: 1;
+
+    &-none {
+      border: 0;
+    }
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &--light {
+    background-color: white;
+    color: $color-paragraph;
+  }
+}

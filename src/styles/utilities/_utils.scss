@@ -1,0 +1,133 @@
+@import '../settings/variables';
+@import '../tools/mixins/breakpoints';
+
+%shadow-bordered-area {
+  background-color: $color-background;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.5rem $color-shadow;
+}
+
+%button-padding {
+  padding: 1rem 2rem;
+}
+
+.u-vertical-align {
+  &--start {
+    align-items: flex-start;
+  }
+  &--center {
+    align-items: center;
+  }
+  &--end {
+    align-items: flex-end;
+  }
+}
+
+.u-full-width {
+  width: 100%;
+}
+.u-full-height {
+  height: 100%;
+}
+
+.u-align {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      &#{$infix}--left   { text-align: left; }
+      &#{$infix}--right  { text-align: right; }
+      &#{$infix}--center { text-align: center; }
+    }
+  }
+}
+
+.u-position-right {
+  right: 0;
+}
+
+.u-position-left {
+  right: 0;
+}
+
+.u-borderless {
+  border: 0;
+}
+
+.u-display--inline-block {
+  display: inline-block;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    .u-display#{$infix}--none {
+      display: none;
+    }
+
+    .u-display#{$infix}--flex {
+      display: flex;
+    }
+
+    .u-display#{$infix}--inline-flex {
+      display: inline-flex;
+    }
+
+    .u-display#{$infix}--block {
+      display: block;
+    }
+
+    .u-display#{$infix}--inline {
+      display: inline;
+    }
+
+    .u-display#{$infix}--inline-block {
+      display: inline-block;
+    }
+  }
+}
+
+.u-input-fixed-width {
+  min-width: 20em;
+}
+
+.u-no-wrap {
+  white-space: nowrap;
+}
+
+.u-color {
+  &--selected {
+    color: $color-selected;
+  }
+  &--primary {
+    color: $color-primary;
+  }
+  &--primary-dark {
+    color: $color-primary-dark;
+  }
+  &--neutral {
+    color: $color-neutral;
+  }
+  &--paragraph {
+    color: $color-paragraph;
+  }
+  &--paragraph-light {
+    color: $color-paragraph-light;
+  }
+  &--accent {
+    color: $color-accent;
+  }
+}
+
+.u-capitalize {
+  text-transform: capitalize;
+}
+
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+.u-paragraph--light {
+  color: $color-labels;
+  line-height: 1.5em;
+}

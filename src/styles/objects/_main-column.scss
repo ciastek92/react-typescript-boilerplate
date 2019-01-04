@@ -1,0 +1,19 @@
+@import '../settings/variables';
+
+.o-main-column {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-left: $gutter-big;
+  padding-right: $gutter-big;
+  width: 72em;
+
+  &--wide {
+    width: 90em;
+  }
+
+  &--narrow {
+    width: 53em;
+  }
+}

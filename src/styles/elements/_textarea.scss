@@ -1,0 +1,13 @@
+@import '../settings/variables';
+@import '../tools/mixins/transition';
+
+textarea, .textarea {
+  border: $hairline solid $color-separator;
+  border-radius: 0.25em;
+  color: $color-paragraph;
+  width: 100%;
+  padding: $margin-small;
+  resize: none;
+  font-size: $font-size-caption;
+  line-height: 1.5em;
+}

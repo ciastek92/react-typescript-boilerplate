@@ -1,0 +1,29 @@
+@import '../../settings/variables';
+
+@mixin u-margin($position, $prefix) {
+  $name: if($prefix == null, -#{$position}, #{$prefix}-#{$position});
+
+  &#{$name} {
+    margin-#{$position}: $margin-normal;
+
+    &--none {
+      margin-#{$position}: 0;
+    }
+
+    &--tiny {
+      margin-#{$position}: $margin-tiny;
+    }
+
+    &--small {
+      margin-#{$position}: $margin-small;
+    }
+
+    &--big {
+      margin-#{$position}: $margin-big;
+    }
+
+    &--enormous {
+      margin-#{$position}: $margin-enormous;
+    }
+  }
+}

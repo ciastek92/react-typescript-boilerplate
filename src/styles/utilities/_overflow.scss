@@ -1,0 +1,28 @@
+@import '../tools/mixins/breakpoints';
+
+.u-overflow {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      &#{$infix}-y {
+        overflow-y: auto;
+        &--hidden {
+          overflow-y: hidden;
+        }
+        &--visible {
+          overflow-y: visible;
+        }
+      }
+      &#{$infix}-x {
+        overflow-x: auto;
+        &--hidden {
+          overflow-x: hidden;
+        }
+        &--visible {
+          overflow-x: visible;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.ul {
+  &--bullets {
+    list-style: disc;
+    padding-left: 1em;
+  }
+
+  &--with-spacing {
+    li {
+      margin-bottom: 1em;
+    }
+  }
+
+  &--no-decoration {
+      list-style: none;
+  }
+}

@@ -1,0 +1,51 @@
+@import '../settings/variables';
+
+.c-hamburger,
+.c-hamburger:after,
+.c-hamburger:before {
+  width: $hamburger-bar-width;
+  height: $hamburger-bar-height;
+  background: rgba(255, 255, 255, 1);
+}
+
+.c-hamburger--dark,
+.c-hamburger--dark:after,
+.c-hamburger--dark:before {
+  background: $color-primary-dark;
+}
+
+.c-hamburger {
+  position: relative;
+  transform: translateY($hamburger-bar-spacing);
+  transition: all 0ms 300ms;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: $hamburger-bar-spacing;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  &:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: $hamburger-bar-spacing;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  &--open {
+    background: rgba(255, 255, 255, 0);
+    &:after {
+      top: 0;
+      transform: rotate(45deg);
+      transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    &:before {
+      bottom: 0;
+      transform: rotate(-45deg);
+      transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  }
+}

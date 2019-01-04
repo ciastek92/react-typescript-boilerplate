@@ -1,0 +1,51 @@
+@import '../settings/variables';
+@import '../tools/mixins/transition';
+
+.c-list-item {
+  @include transition(background-color);
+  cursor: pointer;
+  display: flex;
+  font-size: 0.75em;
+  padding: 1em;
+  align-items: center;
+
+  &__icon {
+    display: inline-block;
+    align-self: start;
+    text-align: center;
+    width: 4.5em;
+    line-height: 1.6em;
+    margin-right: 2em;
+  }
+
+  &__label {
+    flex: 1 1 auto;
+    white-space: nowrap;
+  }
+
+  &__empty-selection {
+    border-bottom: 1px solid $color-neutral;
+  }
+
+  &:hover {
+    background-color: $color-background-alternative;
+  }
+
+  &--small-icon {
+    padding-left: 0;
+
+    .c-list-item__icon {
+      font-size: 0.625em;
+    }
+  }
+
+  &--primary-color {
+    .c-list-item__icon {
+      color: $color-primary;
+    }
+  }
+
+  &--emphasized {
+    font-weight: $font-weight-bold;
+  }
+}

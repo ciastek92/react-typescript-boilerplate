@@ -1,0 +1,11 @@
+@import '../settings/variables';
+
+.hr {
+  margin-top: $hr-margin;
+  margin-bottom: $hr-margin;
+  border: 0;
+
+  &--color-neutral {
+    border-top: $hairline solid $color-neutral;
+  }
+}

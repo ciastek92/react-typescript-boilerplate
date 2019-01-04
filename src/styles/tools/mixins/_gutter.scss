@@ -1,0 +1,29 @@
+@import '../../settings/variables';
+
+@mixin u-gutter($position, $prefix) {
+  $name: if($prefix == null, -#{$position}, #{$prefix}-#{$position});
+
+  &#{$name} {
+    padding-#{$position}: $gutter-normal;
+
+    &--none {
+      padding-#{$position}: 0;
+    }
+
+    &--tiny {
+      padding-#{$position}: $gutter-tiny;
+    }
+
+    &--small {
+      padding-#{$position}: $gutter-small;
+    }
+
+    &--big {
+      padding-#{$position}: $gutter-big;
+    }
+
+    &--enormous {
+      padding-#{$position}: $gutter-enormous;
+    }
+  }
+}

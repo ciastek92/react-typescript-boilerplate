@@ -1,0 +1,38 @@
+@import '../settings/variables';
+@import '../tools/mixins/gutter';
+@import '../tools/mixins/breakpoints';
+
+.o-gutter {
+  padding: $gutter-normal;
+
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      &#{$infix}--none {
+        padding: 0;
+      }
+
+      &#{$infix}--tiny {
+        padding: $gutter-tiny;
+      }
+
+      &#{$infix}--small {
+        padding: $gutter-small;
+      }
+
+      &#{$infix}--big {
+        padding: $gutter-big;
+      }
+
+      &#{$infix}--enormous {
+        padding: $gutter-enormous;
+      }
+
+      @include u-gutter(top, $infix);
+      @include u-gutter(right, $infix);
+      @include u-gutter(bottom, $infix);
+      @include u-gutter(left, $infix);
+    }
+  }
+}

@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav item tests renders with all props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NavItem
+    icon="icon-calendar"
+    isLight={true}
+    title="earnings"
+    url="/earnings"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "activeClassName": "",
+      "ariaCurrent": "true",
+      "children": Array [
+        <i
+          className="c-nav-item__icon icon-calendar"
+        />,
+        <span
+          className="c-nav-item__title"
+        >
+          earnings
+        </span>,
+      ],
+      "className": "c-nav-item c-nav-item--light",
+      "onClick": [Function],
+      "to": "/earnings",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "c-nav-item__icon icon-calendar",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "i",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "earnings",
+          "className": "c-nav-item__title",
+        },
+        "ref": null,
+        "rendered": "earnings",
+        "type": "span",
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "activeClassName": "",
+        "ariaCurrent": "true",
+        "children": Array [
+          <i
+            className="c-nav-item__icon icon-calendar"
+          />,
+          <span
+            className="c-nav-item__title"
+          >
+            earnings
+          </span>,
+        ],
+        "className": "c-nav-item c-nav-item--light",
+        "onClick": [Function],
+        "to": "/earnings",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "c-nav-item__icon icon-calendar",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "i",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "earnings",
+            "className": "c-nav-item__title",
+          },
+          "ref": null,
+          "rendered": "earnings",
+          "type": "span",
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Nav item tests renders with only required props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NavItem
+    url="calendar"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "activeClassName": "c-nav-item--active",
+      "ariaCurrent": "true",
+      "children": Array [
+        undefined,
+        undefined,
+      ],
+      "className": "c-nav-item",
+      "onClick": [Function],
+      "to": "calendar",
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      undefined,
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "activeClassName": "c-nav-item--active",
+        "ariaCurrent": "true",
+        "children": Array [
+          undefined,
+          undefined,
+        ],
+        "className": "c-nav-item",
+        "onClick": [Function],
+        "to": "calendar",
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        undefined,
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -1,0 +1,529 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Side nav tests renders menu correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SideNav />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        undefined,
+        <header
+          className="c-side-nav__logo"
+        >
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            to="/"
+          />
+        </header>,
+        <ul
+          className="ul--no-decoration"
+        >
+          <li>
+            <NavItem
+              icon="icon-earnings"
+              title="New"
+              url="/"
+            />
+          </li>
+          <li>
+            <NavItem
+              disabled={true}
+              icon="icon-earnings"
+              title="Saved"
+              url="/saved"
+            />
+          </li>
+          <li>
+            <NavItem
+              disabled={true}
+              icon="icon-earnings"
+              title="Active"
+              url="/active"
+            />
+          </li>
+          <li>
+            <NavItem
+              disabled={true}
+              icon="icon-earnings"
+              title="Contact"
+              url="/contact"
+            />
+          </li>
+        </ul>,
+      ],
+      "className": "c-side-nav",
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            to="/"
+          />,
+          "className": "c-side-nav__logo",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              <NavItem
+                icon="icon-earnings"
+                title="New"
+                url="/"
+              />
+            </li>,
+            <li>
+              <NavItem
+                disabled={true}
+                icon="icon-earnings"
+                title="Saved"
+                url="/saved"
+              />
+            </li>,
+            <li>
+              <NavItem
+                disabled={true}
+                icon="icon-earnings"
+                title="Active"
+                url="/active"
+              />
+            </li>,
+            <li>
+              <NavItem
+                disabled={true}
+                icon="icon-earnings"
+                title="Contact"
+                url="/contact"
+              />
+            </li>,
+          ],
+          "className": "ul--no-decoration",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <NavItem
+                icon="icon-earnings"
+                title="New"
+                url="/"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "icon": "icon-earnings",
+                "title": "New",
+                "url": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <NavItem
+                disabled={true}
+                icon="icon-earnings"
+                title="Saved"
+                url="/saved"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "disabled": true,
+                "icon": "icon-earnings",
+                "title": "Saved",
+                "url": "/saved",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <NavItem
+                disabled={true}
+                icon="icon-earnings"
+                title="Active"
+                url="/active"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "disabled": true,
+                "icon": "icon-earnings",
+                "title": "Active",
+                "url": "/active",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <NavItem
+                disabled={true}
+                icon="icon-earnings"
+                title="Contact"
+                url="/contact"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "disabled": true,
+                "icon": "icon-earnings",
+                "title": "Contact",
+                "url": "/contact",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+    ],
+    "type": "nav",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          undefined,
+          <header
+            className="c-side-nav__logo"
+          >
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              to="/"
+            />
+          </header>,
+          <ul
+            className="ul--no-decoration"
+          >
+            <li>
+              <NavItem
+                icon="icon-earnings"
+                title="New"
+                url="/"
+              />
+            </li>
+            <li>
+              <NavItem
+                disabled={true}
+                icon="icon-earnings"
+                title="Saved"
+                url="/saved"
+              />
+            </li>
+            <li>
+              <NavItem
+                disabled={true}
+                icon="icon-earnings"
+                title="Active"
+                url="/active"
+              />
+            </li>
+            <li>
+              <NavItem
+                disabled={true}
+                icon="icon-earnings"
+                title="Contact"
+                url="/contact"
+              />
+            </li>
+          </ul>,
+        ],
+        "className": "c-side-nav",
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              to="/"
+            />,
+            "className": "c-side-nav__logo",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "ariaCurrent": "true",
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                <NavItem
+                  icon="icon-earnings"
+                  title="New"
+                  url="/"
+                />
+              </li>,
+              <li>
+                <NavItem
+                  disabled={true}
+                  icon="icon-earnings"
+                  title="Saved"
+                  url="/saved"
+                />
+              </li>,
+              <li>
+                <NavItem
+                  disabled={true}
+                  icon="icon-earnings"
+                  title="Active"
+                  url="/active"
+                />
+              </li>,
+              <li>
+                <NavItem
+                  disabled={true}
+                  icon="icon-earnings"
+                  title="Contact"
+                  url="/contact"
+                />
+              </li>,
+            ],
+            "className": "ul--no-decoration",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <NavItem
+                  icon="icon-earnings"
+                  title="New"
+                  url="/"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "icon": "icon-earnings",
+                  "title": "New",
+                  "url": "/",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <NavItem
+                  disabled={true}
+                  icon="icon-earnings"
+                  title="Saved"
+                  url="/saved"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "disabled": true,
+                  "icon": "icon-earnings",
+                  "title": "Saved",
+                  "url": "/saved",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <NavItem
+                  disabled={true}
+                  icon="icon-earnings"
+                  title="Active"
+                  url="/active"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "disabled": true,
+                  "icon": "icon-earnings",
+                  "title": "Active",
+                  "url": "/active",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <NavItem
+                  disabled={true}
+                  icon="icon-earnings"
+                  title="Contact"
+                  url="/contact"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "disabled": true,
+                  "icon": "icon-earnings",
+                  "title": "Contact",
+                  "url": "/contact",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "nav",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

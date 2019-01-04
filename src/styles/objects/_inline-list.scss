@@ -1,0 +1,62 @@
+@import '../settings/_variables';
+
+.o-inline-list {
+  width: 100%;
+  display: flex;
+  $this: &;
+
+  &--right {
+    justify-content: flex-end;
+  }
+
+  &__item {
+    padding: 0 $margin-tiny;
+
+    &--grow {
+      flex: 1 1 auto;
+    }
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--justified {
+    justify-content: space-between;
+  }
+
+  &--vertical-separator > {
+
+    #{$this}__item + #{$this}__item {
+      border-left: $hairline solid $color-separator;
+    }
+
+    #{$this}__item {
+      padding: 0 1.5em;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  &--collapsable {
+    @media screen and (max-width: map_get($grid-breakpoints, sm)) {
+    flex-direction: column;
+
+    &#{$this}--vertical-separator > {
+      #{$this}__item + #{$this}__item {
+        border: none;
+      }
+
+      #{$this}__item {
+        padding: 0 0 $margin-small 0;
+      }
+    }
+    }
+  }
+}
